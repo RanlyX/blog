@@ -1,4 +1,42 @@
-baseURL = 'https://ranlyx.github.io/blog'
+baseURL = 'https://ranlyx.github.io/blog/public/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'stack'
+
+[params]
+  mainSections = ["posts"]
+
+  [params.hero]
+    enabled = true
+    intro = "Hi, 我是Ranly"
+    description = "歡迎來到我的部落格，這裡分享技術與生活筆記。"
+    image = "images/avatar.png"
+
+  [params.dateFormat]
+    published = "2025-04-20"
+    lastUpdated = "2025-04-20"
+
+[homepage]
+  layout = "posts"
+
+[menu]
+
+  [[menu.main]]
+    name = "首頁"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "分類"
+    url = "/categories/"
+    weight = 2
+
+  [[menu.main]]
+    name = "標籤"
+    url = "/tags/"
+    weight = 3
+
+  [[menu.main]]
+    name = "關於"
+    url = "/about/"
+    weight = 4
